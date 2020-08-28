@@ -1,6 +1,6 @@
 var path = require('path')
 var webpack = require('webpack')
-var TARGET = process.env.TARGET || null
+var TARGET = process.env.TARGET || 'minify'
 
 var config = {
   entry: {},
