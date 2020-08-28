@@ -1,5 +1,5 @@
-import React, { Component, PropTypes, createElement } from 'react'
-
+import React, { Component, createElement } from 'react'
+import PropTypes from 'prop-types'
 export default function withOptGroupProps(WrappedComponent) {
   return class extends Component {
     static childContextTypes = {

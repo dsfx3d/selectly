@@ -1,5 +1,5 @@
-import React, { Component, PropTypes, Children, cloneElement } from 'react'
-import ReactDOM, { findDOMNode } from 'react-dom'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Select as ARIASelect } from 'react-aria'
 import { Manager as PopperManager } from 'react-popper'
 import getToggledValues from './utils/get-toggled-values'

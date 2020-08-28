@@ -1,8 +1,8 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
 import { Target } from 'react-popper'
 import { Trigger as ARIATrigger } from 'react-aria'
-import Measure from 'react-measure'
 
 const Trigger = (
   { defaultValue, renderLabel = label => label, children, ...restProps },

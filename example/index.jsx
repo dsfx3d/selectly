@@ -1,6 +1,7 @@
-import React, { Component, Children, PropTypes, cloneElement } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import ReactDOM from 'react-dom'
-import { spring } from 'react-motion'
+// import { spring } from 'react-motion'
 import {
   Select,
   Trigger,

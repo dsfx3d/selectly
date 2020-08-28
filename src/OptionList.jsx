@@ -1,8 +1,9 @@
-import React, { PropTypes } from 'react'
+import React from 'react'
+import PropTypes from 'prop-types'
 import { Select } from 'react-aria'
 
 const OptionList = (props, context) => {
-  const { children, ...restProps } = props
+  const { children } = props
   const { selectly } = context
   const childrenToRender = typeof children === 'function'
     ? optionListProps =>
