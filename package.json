@@ -1,5 +1,5 @@
 {
-  "name": "selectly",
+  "name": "@dsfx3d/selectly",
   "version": "0.5.0",
   "description": "Build custom, accessible, select menus for React.",
   "main": "lib/index.js",
@@ -9,16 +9,16 @@
   ],
   "scripts": {
     "build:lib": "babel src --out-dir lib",
-    "build": "npm run build:lib && NODE_ENV=production webpack --config webpack.prod.config.js",
+    "build": "npm run build:lib && webpack --config webpack.prod.config.js",
     "dev": "webpack-dev-server --inline --hot --progress --colors --host 0.0.0.0 --devtool eval",
-    "postbuild": "NODE_ENV=production TARGET=minify webpack --config webpack.prod.config.js",
+    "postbuild": "webpack --config webpack.prod.config.js",
     "prebuild": "rm -rf dist && mkdir dist",
     "prepublish": "npm run build",
-    "deploy": "NODE_ENV=production TARGET=minify webpack && git-directory-deploy --directory example --branch gh-pages"
+    "deploy": "webpack && git-directory-deploy --directory example --branch gh-pages"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/souporserious/selectly"
+    "url": "https://github.com/dsfx3d/selectly"
   },
   "keywords": [
     "react",
@@ -31,17 +31,18 @@
     "input",
     "ui"
   ],
-  "author": "Travis Arnold <travis@souporserious.com> (http://souporserious.com)",
+  "author": "Yashodhan Singh <dsfx3d@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/souporserious/selectly/issues"
+    "url": "https://github.com/dsfx3d/selectly/issues"
   },
-  "homepage": "https://github.com/souporserious/selectly",
+  "homepage": "https://github.com/dsfx3d/selectly",
   "peerDependencies": {
     "react": ">0.13.0",
     "react-dom": ">0.13.0"
   },
   "dependencies": {
+    "prop-types": "15.7.2",
     "react-aria": "^0.9.2",
     "react-measure": "^1.4.6",
     "react-popper": "^0.7.0",
@@ -60,10 +61,10 @@
     "git-directory-deploy": "^1.5.1",
     "http-server": "^0.9.0",
     "node-libs-browser": "^1.0.0",
-    "node-sass": "^3.2.0",
+    "node-sass": "4.14.1",
     "postcss-loader": "^0.13.0",
-    "react": "15.3.2",
-    "react-dom": "15.3.2",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
     "react-motion": "^0.3.1",
     "react-motion-ui-pack": "^0.5.1",
     "sass-loader": "^4.0.2",
